@@ -1,0 +1,21 @@
+*{
+
+}
+
+
+.menu-bar {
+    text-align: center;
+
+}
+
+.cards {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.card {
+    border-radius: 30px;
+    padding: 10px;
+}
+
