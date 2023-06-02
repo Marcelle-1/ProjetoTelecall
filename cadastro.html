@@ -25,19 +25,19 @@
             <div class="col-md-4 ">
               <label for="validationServer01" class="form-label">Nome</label>
                <!-- 2 [] – O campo nome deve ter no mínimo 15 caracteres e no máximo 60 caracteres alfabéticos. -->
-              <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+              <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
               <div class="valid-feedback">
-                Bom!
+                Tudo certo!
               </div>
             </div>
             <div class="col-md-4">
               <label for="validationServer02" class="form-label">Sobrenome</label>
               <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
               <div class="valid-feedback">
-                Ok!
+                Tudo certo!
               </div>
             </div>
-            <div class="mb-3">
+            <div class="col-md-3">
                 <label for="validationServer03" class="form-label">Sexo</label>
                 <select class="form-select is-invalid" id="validationServer03" aria-label="select example" required>
                   <option selected disabled value="">Selecione...</option>
@@ -46,19 +46,23 @@
                   <option value="3">Outro</option>
                 </select>
                 <div id="validationServer03Feedback" class="invalid-feedback">
-                    Por favor selecione.
+                  Por favor selecione.
+                </div>
+                <div id="validationServer03Feedback" class="valid-feedback">
+                  Tudo certo!
                 </div>
             </div>
-            CPF
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <label for="validationServer05" class="form-label">CPF</label>
                 <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
                 <div id="validationServer05Feedback" class="invalid-feedback">
                     Por favor insira um CEP Válido.
                 </div>
+                <div id="validationServer05Feedback" class="valid-feedback">
+                  Tudo certo!
+                </div>
             </div>
-            telefone celular
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <label for="validationServer05" class="form-label">Telefone celular</label>
                 <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
                 <div id="validationServer05Feedback" class="invalid-feedback">
@@ -66,8 +70,7 @@
                 </div>
             </div>
             <!-- 3 [] – Os campos Telefone Celular e Telefone Fixo devem ter os seguintes formatos (+55)XX-XXXXXXXX. -->
-            telefone fixo
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <label for="validationServer05" class="form-label">Telefone fixo</label>
                 <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
                 <div id="validationServer05Feedback" class="invalid-feedback">
@@ -117,9 +120,8 @@
                 </div>
             </div>
             <!-- 5 [] – O campo Senha deve ter 8 caracteres alfabéticos. -->
-            confirmar senha
             <div class="col-md-4">
-                <label for="validationPassword" class="form-label">Senha</label>
+                <label for="validationPassword" class="form-label">Confirmar senha</label>
                 <input type="password" id="validationPassword" class="form-control is-invalid" aria-labelledby="passwordHelpInline">
                 <div id="validationServer05Feedback" class="invalid-feedback">
                     Deve ter de 8 a 20 caracteres.
@@ -134,6 +136,13 @@
                 <div id="invalidCheck3Feedback" class="invalid-feedback">
                   Você precisa concordar para cadastrar.
                 </div>
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <label for="validationTooltip03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationTooltip03" required>
+              <div class="invalid-tooltip">
+                Please provide a valid city.
               </div>
             </div>
             <div class="col-12">

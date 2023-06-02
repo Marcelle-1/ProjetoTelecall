@@ -3,6 +3,10 @@
     font-size: medium;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #373636;
     color: white;
@@ -35,6 +39,10 @@ h3, h2 {
     color: white;
 }
 
+#eventos {
+    text-align: center;
+}
+
 .contato {
     padding: 10px;
 }
@@ -58,5 +66,49 @@ h3, h2 {
 
 footer {
     background-color: rgb(10, 10, 10);
-    height: fit-content;
+    text-align: center;
+    padding: 10px;
 }
+
+
+/* cadastro */
+#cadastro {
+    background-color: #000000;
+    border-radius: 15px;
+    padding: 20px;
+}
+/* #124f7d
+
+#840915
+
+ */
+
+ /* login */
+ #bodyLogin {
+    background-color: #373636;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+#formLogin {
+    display: flex;
+    flex-direction: column;
+}
+
+ #login {
+    background-color: #000000;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 5px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .form-btn {
+    align-self: center;
+ }
