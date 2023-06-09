@@ -16,9 +16,22 @@ section {
     padding: 10px;
 }
 
+#logoIndex {
+    height: 90px;
+    width: 250px;
+}
+
+
+#preco {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
 h3, h2 {
     color: #95D8FF;
     font-weight: bold;
+    text-align: center;
+    padding: 5px;
 }
 
 .menu-bar {
@@ -49,6 +62,7 @@ h3, h2 {
 
 .btn {
     background-color: #121A89;
+    border-radius: 15px;
 }
 
 #planos {
@@ -73,15 +87,30 @@ footer {
 
 /* cadastro */
 #cadastro {
-    background-color: #000000;
+    background-color: rgb(12 1 1);
     border-radius: 15px;
     padding: 20px;
+    margin: 5px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 /* #124f7d
 
 #840915
 
  */
+ #cadastroBody {
+    background-color: #373636;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+ }
 
  /* login */
  #bodyLogin {
@@ -91,15 +120,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
- }
-
-#formLogin {
-    display: flex;
     flex-direction: column;
 }
 
- #login {
-    background-color: #000000;
+ 
+ #formLogin {
+     display: flex;
+     flex-direction: column;
+    }
+    
+#login {
+    background-color: #181515;
     border-radius: 15px;
     padding: 20px;
     margin: 5px;
