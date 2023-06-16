@@ -151,4 +151,14 @@ footer {
 
  .form-btn {
     align-self: center;
+    margin: 5px;
  }
+
+svg {
+    margin: 5px;
+}
+
+.logoFooter {
+    height: 50px;
+    width: 80px;
+}
