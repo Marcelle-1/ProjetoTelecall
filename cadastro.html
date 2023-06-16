@@ -24,74 +24,84 @@
         <form id="form-cadastro" class="row g-3 was-validated">
             <div class="col-md-4 ">
               <label for="validationServer01" class="form-label">Nome</label>
-               <!-- 2 [x] – O campo nome deve ter no mínimo 15 caracteres e no máximo 60 caracteres alfabéticos. -->
-              <input type="text" class="form-control"  id="name" value="" required pattern="^[A-Za-z]{15,60}$">
-              <div id="validationServer01Feedback" class="valid-feedback is-valid d-none">
+              <input type="text" class="form-control"  id="name" value="" required pattern="^[A-Za-z]{3,60}$">
+              <div id="validationServer01Feedback" class="valid-feedback is-valid">
                 Tudo certo!
               </div>
-              <div id="validationServer01Feedback" class="invalid-feedback is-invalid d-none">
+              <div id="validationServer01Feedback" class="invalid-feedback is-invalid">
                 Por favor selecione.
               </div>
             </div>
             <div class="col-md-4">
               <label for="validationServer02" class="form-label">Sobrenome</label>
-              <input type="text" class="form-control " id="validationServer02" value="" required pattern="^[A-Za-z]$">
-              <div class="valid-feedback is-valid">
+              <input type="text" class="form-control " id="validationServer02" value="" required>
+              <div class="valid-feedback is-valid ">
                 Tudo certo!
               </div>
-              
+              <div id="validationServer02Feedback" class="invalid-feedback is-invalid">
+                Por favor selecione.
+              </div>
             </div>
             <div class="col-md-3">
                 <label for="validationServer03" class="form-label">Sexo</label>
-                <select class="form-select is-invalid" id="validationServer03" aria-label="select example" required>
+                <select class="form-select" id="validationServer03" aria-label="select example" required>
                   <option selected disabled value="">Selecione...</option>
                   <option value="1">Feminino</option>
                   <option value="2">Masculino</option>
                   <option value="3">Outro</option>
+                  <option value="4">Prefiro não responder</option>
                 </select>
-                <div id="validationServer03Feedback" class="invalid-feedback d-none">
+                <div id="validationServer03Feedback" class="invalid-feedback is-invalid">
                   Por favor selecione.
                 </div>
-                <div id="validationServer03Feedback" class="valid-feedback d-none">
+                <div id="validationServer03Feedback" class="valid-feedback is-valid">
                   Tudo certo!
                 </div>
             </div>
             <div class="col-md-4">
-                <label for="validationServer05" class="form-label" >CPF</label>
-                <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required pattern="^[0-9]{11}$">
-                <div id="validationServer05Feedback" class="invalid-feedback">
-                    Por favor insira um CEP Válido.
+                <label for="validationServer04" class="form-label" >CPF</label>
+                <input type="text" class="form-control" id="validationServer04" aria-describedby="validationServer04Feedback" required pattern="^[0-9]{11}$">
+                <div id="validationServer04Feedback" class="invalid-feedback is-invalid">
+                    Por favor insira um CPF Válido.
                 </div>
-                <div id="validationServer05Feedback" class="valid-feedback">
+                <div id="validationServer04Feedback" class="valid-feedback is-valid">
                   Tudo certo!
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="validationServer05" class="form-label">Telefone celular</label>
-                <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required pattern="^\(\+55\)?[\s-]?\(?\d{2}\)?[\s-]?\d{5}-??[\s-]?\d{4}$">
-                <div id="validationServer05Feedback" class="invalid-feedback">
+                <input type="text" class="form-control" id="validationServer05" aria-describedby="validationServer05Feedback" required pattern="^\(?\d{2}\)?[\s-]?\d{5}-??[\s-]?\d{4}$">
+                <div id="validationServer05Feedback" class="invalid-feedback is-invalid">
                     Por favor insira um número Válido
                 </div>
+                <div id="validationServer04Feedback" class="valid-feedback is-valid">
+                  Tudo certo!
+                </div>
             </div>
-            <!-- 3 [x] – Os campos Telefone Celular e Telefone Fixo devem ter os seguintes formatos (+55)XX-XXXXXXXX. -->
             <div class="col-md-4">
-                <label for="validationServer05" class="form-label">Telefone fixo</label>
-                <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required pattern="^^\(\+55\)?[\s-]?\(?\d{2}\)?[\s-]?\d{4}-??[\s-]?\d{4}$">
-                <div id="validationServer05Feedback" class="invalid-feedback">
+                <label for="validationServer06" class="form-label">Telefone fixo</label>
+                <input type="text" class="form-control" id="validationServer06" aria-describedby="validationServer06Feedback" required pattern="^\(?\d{2}\)?[\s-]?\d{4}-??[\s-]?\d{4}$">
+                <div id="validationServer06Feedback" class="invalid-feedback is-invalid">
                     Por favor insira um número Válido
+                </div>
+                <div id="validationServer04Feedback" class="valid-feedback is-valid">
+                  Tudo certo!
                 </div>
             </div>
 
             <div class="col-md-6">
-                <label for="validationServer03" class="form-label">Endereço</label>
-                <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-                <div id="validationServer03Feedback" class="invalid-feedback d-none">
+                <label for="validationServer07" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="validationServer07" aria-describedby="validationServer07Feedback" required>
+                <div id="validationServer07Feedback" class="invalid-feedback is-invalid">
                     Por favor insira um endereço válido
+                </div>
+                <div id="validationServer04Feedback" class="valid-feedback is-valid">
+                  Tudo certo!
                 </div>
             </div>
             <div class="col-md-3">
-                <label for="validationServer04" class="form-label">Estado</label>
-                <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                <label for="validationServer08" class="form-label">Estado</label>
+                <select class="form-select" id="validationServer08" aria-describedby="validationServer08Feedback" required>
                     <option selected disabled value="">Escolha...</option>
                     <option>AC</option>
                     <option>AL</option>
@@ -121,59 +131,68 @@
                     <option>SE</option>
                     <option>TO</option>
                 </select>
-                <div id="validationServer04Feedback" class="invalid-feedback">
+                <div id="validationServer08Feedback" class="invalid-feedback is-invalid">
                     Por favor selecione um Estado válido
+                </div>
+                <div id="validationServer08Feedback" class="valid-feedback is-valid">
+                  Tudo certo!
                 </div>
             </div>
             <div class="col-md-3">
-                <label for="validationServer05" class="form-label">CEP</label>
-                <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required pattern="^[0-9]{8}$">
-                <div id="validationServer05Feedback" class="invalid-feedback">
+                <label for="validationServer09" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="validationServer09" aria-describedby="validationServer09Feedback" required pattern="^[0-9]{8}$">
+                <div id="validationServer09Feedback" class="invalid-feedback is-invalid">
                     Por favor insira um CEP Válido.
+                </div>
+                <div id="validationServer09Feedback" class="valid-feedback is-valid">
+                  Tudo certo!
                 </div>
             </div>
             <div class="col-md-4">
               <label for="validationServerUsername" class="form-label">Login</label>
-              <!-- 4 [x] – O campo Login deve ter exatamente 6 caracteres alfabéticos. -->
               <div class="input-group has-validation">
-                <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Digite" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required pattern="^[A-Za-z]{6}$">
-                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                <input type="text" class="form-control" id="validationServerUsername" placeholder="Digite" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required pattern="^[A-Za-z]{6}$">
+                <div id="validationServerUsernameFeedback" class="invalid-feedback is-invalid">
                   Por favor, digite um nome de usuário <br/>
                   Deve conter exatos 6 caracteres alfabéticos
+                </div>
+                <div id="validationServer04Feedback" class="valid-feedback is-valid">
+                  Tudo certo!
                 </div>
               </div>
             </div>
             <div class="col-md-4">
                 <label for="validationPassword" class="form-label">Senha</label>
-                <input type="password" id="validationPassword" class="form-control is-invalid" aria-labelledby="passwordHelpInline" required pattern="^[A-Za-z]{8}$">
-                <div id="validationServer05Feedback" class="invalid-feedback">
+                <input type="password" id="validationPassword" class="form-control" aria-labelledby="passwordHelpInline" required pattern="^[A-Za-z]{8}$">
+                <div id="validationServer10Feedback" class="invalid-feedback is-invalid">
                   Sua senha deve conter 8 caracteres alfabéticos
                 </div>
+                <div id="validationServer10Feedback" class="valid-feedback is-valid">
+                  Tudo certo!
+                </div>
             </div>
-            <!-- 5 [x] – O campo Senha deve ter 8 caracteres alfabéticos. -->
             <div class="col-md-4">
-                <label for="validationPassword" class="form-label">Confirmar senha</label>
-                <input type="password" id="validationPassword" class="form-control is-invalid" aria-labelledby="passwordHelpInline" required pattern="^[A-Za-z]{8}$">
-                <div id="validationServer05Feedback" class="invalid-feedback">
+                <label for="validationConfirmPassword" class="form-label">Confirmar senha</label>
+                <input type="password" id="validationConfirmPassword" class="form-control" aria-labelledby="passwordHelpInline" required pattern="^[A-Za-z]{8}$">
+                <div id="validationServer11Feedback" class="invalid-feedback ">
                     Suas senhas não estão iguais
+                </div>
+                <div id="validationServer111Feedback" class="valid-feedback ">
+                  Tudo certo!
                 </div>
             </div>
             <div class="col-12">
                 <div class="form-check">
-                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-                    <label class="form-check-label" for="invalidCheck3">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck1" aria-describedby="invalidCheck1Feedback" required>
+                    <label class="form-check-label" for="invalidCheck1">
                         Concordo com os termos e condições.
                 </label>
-                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                <div id="invalidCheck1Feedback" class="invalid-feedback is-invalid">
                   Você precisa concordar para cadastrar.
                 </div>
-              </div>
-            </div>
-            <div class="col-md-6 position-relative">
-              <label for="validationTooltip03" class="form-label">City</label>
-              <input type="text" class="form-control" id="validationTooltip03" required>
-              <div class="invalid-tooltip">
-                Please provide a valid city.
+                <div id="validCheck1Feedback" class="valid-feedback is-valid">
+                  Tudo certo!
+                </div>
               </div>
             </div>
             <div class="col-12">

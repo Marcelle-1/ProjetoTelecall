@@ -1,34 +1,15 @@
-$('#form-cadastro').submit(function(){
-    var sexo = $('#validationServer03')
-    var invalido = $('.invalid-feedback')
-    var valido = $('.valid-feedback')
-    var nome = $('#name')
-    var endereco = $('#validationServer03')
-    
+var senha = document.getElementById("validationPassword");
+var confirmaSenha = document.getElementById("validationConfirmPassword");
+var feedback = document.getElementById("validationServer11Feedback");
+var feedbackBom = document.getElementById("validationServer111Feedback");
 
-    if (nome.val() == "") {
-        invalido.removeClass('is-invalid')
-        return false
+function senhasIguais() {
+    if (senha.value != confirmaSenha.value) {
+        feedback.classList.add("is-invalid");
     } else {
-        valido.removeClass('is-valid')
-        return false
-    }
+        feedbackBom.classList.add("is-valid");
+    };
+};
 
-    
-    if (sexo.val() == '1' | '2' | '3') {
-        invalido.removeClass('is-invalid')
-        return false
-    }
-
-
-    if (endereco.val() == "") {
-        invalido.removeClass('is-invalid')
-        return false
-    } else {
-        endereco.removeClass('is-valid')
-        return false
-    }
-
-
-    return false
-})
+senha.onchange = senhasIguais;
+confirmaSenha.onkeyup = senhasIguais;

@@ -39,10 +39,16 @@ h3, h2 {
 
 }
 
+img {
+    max-width: 100%;
+}
+
 .cards {
     display: flex;
     padding: 10px;
-    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -50,6 +56,7 @@ h3, h2 {
     padding: 10px;
     background-color: #000000;
     color: white;
+    margin: 5px;
 }
 
 #eventos {
@@ -127,6 +134,7 @@ footer {
  #formLogin {
      display: flex;
      flex-direction: column;
+     max-width: 60%;
     }
     
 #login {
