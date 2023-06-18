@@ -10,19 +10,39 @@
 </head>
 <body>
   <!--header-->
-  <header>
-    <div class="container">
-        
-          <!-- <object data="/navbar.html" type="text/html"></object> -->
-            <a href="index.html"></a>
-            <img id="logoIndex" src="/img/telecall-logo.svg" alt="logo" sizes="250px 90px"/> 
-        
-    </div>
-  </header>
+    <header id="header">
+    <!-- <div class="header" id="header"> -->
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="img/telecall-logo.svg" alt="Logo" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="#" class="active">Internet</a>
+            <a href="#">Telefonia</a>
+            <a href="#">Mobilidade</a>
+            <a href="#">Rede e Infraestrutura</a>
+            <a href="#">Outros</a>
+            <button class="btnMode" onclick="darkMode()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+            </svg>
+          </button>
+        </div>
+    <!-- </div> -->
+    </header>
   <!--end header-->
 
-   <!-- carousel -->
-   <section id="carousel">
+  <!-- carousel -->
+    <section id="carousel">
     <div id="carouselIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -44,7 +64,7 @@
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Próximo</span>
         </button>
@@ -58,14 +78,14 @@
         <div class="cards">
             <div class="card" style="width: 25rem;">
                 <div class="card-body">
-                  icone
+                  <img src="/img/rede (1).png" class="imgIcon" alt="">
                 <h5 class="card-title">INTERNET</h5>
                 <p class="card-text">Solução de internet em fibra com alta qualidade e disponibilidade.</p>
                 <a href="#" class="btn btn-primary">Saiba mais</a>
                 </div>
             </div>
             <div class="card" style="width: 25rem;">
-              icone
+              <img src="/img/nuvem.png" class="imgIcon" alt="">
                 <div class="card-body">
                 <h5 class="card-title">TELEFONIA</h5>
                 <p class="card-text">Solução inteligente da PABX IP na núvem para sua telefonia fixa.</p>
@@ -74,7 +94,7 @@
             </div>
             <div class="card" style="width: 25rem;">
                 <div class="card-body">
-                  icone
+                  <img src="/img/smartphone.png" class="imgIcon" alt="">
                 <h5 class="card-title">MOBILIDADE</h5>
                 <p class="card-text">Monte planos de celular personalizados para a sua empresa  e pague apenas pelo que precisa.</p>
                 <a href="#" class="btn btn-primary">Saiba mais</a>
@@ -84,11 +104,11 @@
    </section>
    
    <section id="planos">
-    <h3>Conheça nossos planos de mobilidade</h3>
-    <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
+    <h3 class="tituloPlanos">Conheça nossos planos de mobilidade</h3>
+    <div class="card mb-3" style="max-width: 35%">
+        <div class="row g-0" style="height: 200px">
           <div class="col-md-4">
-            <img src="/img/download.png" width="180" height="180" class="img-fluid rounded-start" alt="...">
+            <img src="/img/mulheraleatoria (1).png" width="200" height="180" class="img-fluid rounded-start imgMulher" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -108,19 +128,18 @@
 
    <section id="local">
         <h3>Presença em todo o Rio de Janeiro</h3>
-        colocar mapa
         <div class="card">
           <div class="card-body">
-            <img src="/img/mapa-fibra-rj.png" alt="" sizes="">
+            <img src="/img/mapa-fibra-rj.png" class="imgMap" alt="">
           </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-            <h5 class="card-title">+800km de rede no Rio de Janeiro</h5>
-            <p class="card-text">Acessibilidade e possibilitação às empresas de se conectarem a internet com máxima qualidade, 
-                disponibilidade e segurança</p>
-            <a href="#" class="btn btn-primary">Saiba mais</a>
-            </div>
+          <div class="card" style="width: 60%">
+              <div class="card-body" >
+              <h5 class="card-title">+800km de rede no Rio de Janeiro</h5>
+              <p class="card-text">Acessibilidade e possibilitação às empresas de se conectarem a internet com máxima qualidade, 
+                  disponibilidade e segurança</p>
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+              </div>
+          </div>
         </div>
    </section>
 
@@ -134,44 +153,50 @@
    </article>
 
    <section class="container contato">
-    <h2>Entre em contato</h2>
-    <h3>Fale conosco</h3>
-    <p>Para qualquer informação, dúvida ou comentário:
-        <br/>(21) x xxx-xx xx
-        <br/>0800 xxx xxxx
-    </p>
-    <form id="form-contato" action="">
-        <div class="mb-3 col-5">
-            <label for="exampleFormControlInput1" class="form-label">Nome:</label>
-            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome" required>
-        </div>
-        <div class="mb-3 col-5">
-            <label for="exampleFormControlInput1" class="form-label">Empresa:</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite sua empresa" required>
-        </div>
-        <div class="mb-3 col-5">
-            <label for="exampleFormControlInput1" class="form-label">Telefone:</label>
-            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu número" >
-        </div>
-        <div class="mb-3 col-5">
-            <label for="exampleFormControlInput1" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-        </div>
-        <div class="mb-3 col-5">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite sua mensagem..." required></textarea>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Enviar</button>
-        </div>
-    </form>
+        <h2>Entre em contato</h2>
+        <h3 class="faleConosco">Fale conosco</h3>
+        <p>Para qualquer informação, dúvida ou comentário:
+            <br/>(21) x xxx-xx xx
+            <br/>0800 xxx xxxx
+        </p>
+        <form id="form-contato" action="">
+            <div class="mb-3 col-5">
+                <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome" required>
+            </div>
+            <div class="mb-3 col-5">
+                <label for="exampleFormControlInput1" class="form-label">Empresa:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite sua empresa" required>
+            </div>
+            <div class="mb-3 col-5">
+                <label for="exampleFormControlInput1" class="form-label">Telefone:</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu número" >
+            </div>
+            <div class="mb-3 col-5">
+                <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3 col-5">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite sua mensagem..." required></textarea>
+            </div>
+            <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
+
+        <!-- <aside>
+            <img class="imgContato" src="/img/imagem-contato.jpg" alt="">
+        </aside> -->
    </section>
 
    <footer>
       <img src="/img/logosite.png" alt="" sizes="15px 30px">
       <!-- <img src="instagram.svg" alt="" srcset=""> -->
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        <a href="https://www.instagram.com/telecallbr/">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </a>
       </svg>
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
         <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>

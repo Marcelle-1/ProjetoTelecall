@@ -13,3 +13,25 @@ function senhasIguais() {
 
 senha.onchange = senhasIguais;
 confirmaSenha.onkeyup = senhasIguais;
+
+
+function cadastraUsuario() {
+    var usuario = document.getElementById("validationServerUsername");
+    var senhaUsuario = confirmaSenha;
+    var cadastrado = document.getElementById("cadastrado")
+    // var formCadastro = document.getElementById("form-cadastro")
+
+    var dados = JSON.parse(localStorage.getItem('dados') || '[]');
+
+    dados.push(
+        {
+            usuarioCadastrado: usuario.value,
+            senhaCadastrada: senhaUsuario.value
+        }
+    )
+
+    localStorage.setItem('dados', JSON.stringify(dados));
+    
+    window.location.href = '/sucesso.html'
+
+}
