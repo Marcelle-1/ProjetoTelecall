@@ -41,23 +41,34 @@ var showSidebar      = false;
     });
 
 
-function darkMode() {
+function lightMode() {
     var element = document.body;
-    element.classList.toggle("dark-mode");
+    element.classList.toggle("light-mode");
 }
 
 
+var btnAumentar      = document.getElementById('btnAumentar');
+var btnDiminuir      = document.getElementById('btnDiminuir');
+var elementBody      = document.querySelector( 'body');
+var fontSize         = 100;
+var aumentaDiminui   = 10;
+function aumentar() {
+    fontSize = fontSize + aumentaDiminui;
+    elementBody.style.fontSize = fontSize + '%';
+    return
+}
+
+function diminuir() {
+    fontSize - aumentaDiminui;
+    return 
+    
+}
 window.onload = function() {
     // Botão aumentar e diminuir
-    var btnAumentar      = document.getElementById('btnAumentar');
-    var btnDiminuir      = document.getElementById('btnDiminuir');
-    var elementBody      = document.querySelector( 'body');
-    var fontSize         = 100;
-    var aumentaDiminui   = 10;
-    btnAumentar.addEventListener('click', function(event) {
-        fontSize = fontSize + aumentaDiminui;
-        elementBody.style.fontSize = fontSize + '%';
-    });
+    // btnAumentar.addEventListener('click', function(event) {
+    //     fontSize = fontSize + aumentaDiminui;
+    //     elementBody.style.fontSize = fontSize + '%';
+    // });
 
     btnDiminuir.addEventListener('click', function(event){
         fontSize = fontSize - aumentaDiminui;

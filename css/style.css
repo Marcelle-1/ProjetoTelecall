@@ -1,6 +1,5 @@
 *{
     font-family:Verdana, Tahoma, sans-serif;
-    font-size: medium;
 }
 
 html {
@@ -10,6 +9,7 @@ html {
 body {
     background-color: #373636;
     color: white;
+    font-size: medium;
 }
 
 section {
@@ -101,14 +101,23 @@ header{
 
 
 .btnMode {
-    background-color: white;
+    background: none;
     color: black;
-    font-size: 25px;
+    border: none;
+    color: currentcolor;
     }
 
-.dark-mode {
-    background-color: black;
+.btnTamanho {
+    background: none;
+    border: none;
     color: white;
+    font-size: large;
+}
+
+.light-mode {
+    background-color: #FAF9F9;
+    color: black;
+
 }
 
 
@@ -207,6 +216,7 @@ margin: 50px;;
 
 .imgContato {
     max-width: 50%;
+    float: right;
 }
 
 footer {
