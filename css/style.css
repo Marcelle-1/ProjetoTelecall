@@ -6,6 +6,10 @@ html {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: #373636;
     color: white;
@@ -169,7 +173,7 @@ h3, h2 {
 }
 
 .tituloPlanos {
-margin: 50px;;
+    margin: 50px;;
 }
 
 .imgMulher {
@@ -180,7 +184,45 @@ margin: 50px;;
     height: 220px;
 }
 
+.cardHeight {
+    height: 200px;
+}
 
+.cardPlanos {
+    max-width: fit-content;
+}
+
+@media screen and (min-width: 950px) {
+    .imgMulher {
+        position: relative;
+        max-width: 200px;
+        right: 90px;
+        bottom: 50px;
+        height: 220px;
+    }
+    
+@media screen and (min-width: 768px) and (max-width: 949px) {
+    .imgMulher {
+        position: relative;
+        max-width: 200px;
+        right: 130px;
+        bottom: 50px;
+        height: 220px;
+    }
+    
+    .txtPlanos {
+        position: relative;
+        bottom: 200px;
+        left: 70px;
+    }
+
+    .cardPlanos {
+        width: fit-content;
+    } 
+
+
+}
+}
 
 #eventos {
     text-align: center;
@@ -225,6 +267,17 @@ footer {
     padding: 10px;
 }
 
+.logoFooter {
+    height: 50px;
+    width: 80px;
+    margin: 5px;
+}
+
+.socialMedia {
+    width: 30px;
+    padding: 3px;
+}
+
 
 /* cadastro */
 #cadastro {
@@ -244,6 +297,11 @@ footer {
 #840915
 
  */
+#logoCadastro {
+    text-align: center;
+}
+
+
  #cadastroBody {
     background-color: #373636;
     color: white;
@@ -283,7 +341,7 @@ footer {
     flex-direction: column;
     max-width: 60%;
 }
-    
+
 #login {
     background-color: #181515;
     border-radius: 15px;
@@ -296,8 +354,9 @@ footer {
     max-width: 55%;
 }
 
+
+
 .form-btn {
-    align-self: center;
     margin: 5px;
 }
 
@@ -305,7 +364,52 @@ svg {
     margin: 5px;
 }
 
-.logoFooter {
-    height: 50px;
-    width: 80px;
+@media (min-width: 690px) and (max-width: 767px) {
+    .imgMulher {
+        position: relative;
+        max-width: 200px;
+        right: 220px;
+        bottom: 50px;
+        height: 220px;;
+    }
+    
+    .txtPlanos{
+        position: relative;
+        bottom: 200px;
+        left: 100px;
+    }
+
+    .cardPlanos {
+        width: fit-content;
+    } 
+}
+@media (min-width: 585px) and (max-width: 689px){
+    .imgMulher {
+        position: relative;
+        max-width: 200px;
+        right: 210px;
+        bottom: 50px;
+        height: 220px;;
+    }
+    
+    .txtPlanos{
+        position: relative;
+        bottom: 200px;
+        left: 100px;
+    }
+
+    .cardPlanos {
+        width: fit-content;
+    } 
+}
+@media (max-width: 584px) {
+    .cardHeight {
+        height: auto;
+    }
+
+    .imgMulher {
+        position: unset;
+        max-width: 200px;
+        height: 220px;;
+    }
 }

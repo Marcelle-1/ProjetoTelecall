@@ -27,10 +27,10 @@
                 </svg>
             </button>
             <a href="#" class="active">Internet</a>
-            <a href="#">Telefonia</a>
-            <a href="#">Mobilidade</a>
-            <a href="#">Rede e Infraestrutura</a>
-            <a href="#">Outros</a>
+            <a href="#contato">contato</a>
+            <a href="#quemSomos">Quem somos</a>
+            <a href="/cadastro.html">Cadastrar</a>
+            <a href="/login.html">Fazer Login</a>
             <div>
               <button id="btnAumentar" class="btnTamanho" onclick="aumentar()">A+</button>
               <button id="btnDiminuir" class="btnTamanho" onclick="diminuir()">A-</button>
@@ -109,12 +109,12 @@
    
    <section id="planos">
     <h3 class="tituloPlanos">Conheça nossos planos de mobilidade</h3>
-    <div class="card mb-3" style="max-width: 35%">
-        <div class="row g-0" style="height: 200px">
+    <div class="card mb-3 container cardPlanos">
+        <div class="row g-0 cardHeight">
           <div class="col-md-4">
-            <img src="/img/mulheraleatoria (1).png" width="200" height="180" class="img-fluid rounded-start imgMulher" alt="...">
+            <img src="/img/mulheraleatoria (1).png" width="200" height="180" class="img-fluid rounded imgMulher" alt="...">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 txtPlanos">
             <div class="card-body">
               <h5 class="card-title">Planos de celular empresarial</h5>
               <p class="card-text">Planos a partir de </p>
@@ -125,10 +125,10 @@
       </div>
    </section>
 
-   <section id="eventos">
+   <!-- <section id="eventos">
         <h3>Próximos eventos</h3>
         <img src="" alt="" srcset="">
-   </section>
+   </section> -->
 
    <section id="local">
         <h3>Presença em todo o Rio de Janeiro</h3>
@@ -147,7 +147,7 @@
         </div>
    </section>
 
-   <article class="container">
+   <article id="quemSomos" class="container">
         <h3>Quem somos</h3>
         <p>A Telecall é uma operadora de telecomunicações brasileira que oferece a seus clientes o mais alto padrão de qualidade, 
             velocidade e acessibilidade em soluções de comunicação. Serviços que incluem uma ampla gama de valores agregados, 
@@ -156,7 +156,7 @@
         </p>
    </article>
 
-   <section class="container contato">
+   <section id="contato" class="container contato">
         <h2>Entre em contato</h2>
         <h3 class="faleConosco">Fale conosco</h3>
         <p>Para qualquer informação, dúvida ou comentário:
@@ -195,13 +195,12 @@
    </section>
 
    <footer>
-      <img src="/img/telecall-logo.svg" alt="Logo Telecall" sizes="15px 30px">
-      <img src="/img/instagram.svg" alt="Instagram" sizes="height:30px width:30px" srcset="">
-      <img src="/img/linkedin.svg" alt="LinkedIn" sizes="" srcset="">
-      <img src="/img/facebook.svg" alt="Facebook" sizes="" srcset="">
-      <p>Copyright © 2023 Telecall. Todos os direitos reservados</p> 
-      <p>Desenvolvido por: Marcelle, Fernanda e Camila </p>
-      <!-- nossos githubs? -->
+        <img class="logoFooter" src="/img/telecall-logo.svg" alt="Logo Telecall">
+        <a href="https://www.instagram.com/telecallbr/" target="_blank"><img class="socialMedia" src="/img/instagram-cor.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/telecall/" target="_blank"><img class="socialMedia" src="/img/linkedin-cor.png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/TelecallBr" target="_blank"><img class="socialMedia" src="/img/facebook-cor.png" alt="Facebook"></a>
+        <p>Copyright © 2023 Telecall. Todos os direitos reservados</p> 
+        <p>Desenvolvido por: Marcelle, Fernanda e Camila </p>
    </footer>
 
    
