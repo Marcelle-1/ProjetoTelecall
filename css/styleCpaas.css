@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter, sans-serif';
+}
+body{
+    background-color: #ffffff;
+}
+.img {
+    width: 300px;
+}
+button {
+    background-color: rgb(47, 88, 165);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.button:hover{
+    background-color: #3580db;
+}
+section,
+footer {
+    padding: 54px 0;
+}
+h1{
+    font-size: 50px;
+}
+p{
+    color: #0000009c;
+}
+.container {
+    max-width: 1400px;
+    margin: auto 0;
+    padding: 0 5%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul a {
+    color: rgb(47, 88, 165);
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a::after{
+    content: "";
+    background-color: #3580db;
+    height: 3px;
+    width: 0px;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text {
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1 {
+    font-size: 96px;
+}
+.banner .banner-text p{
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+.privacidade .container {
+    display: flex;
+    align-items: center;
+
+}
+.privacidade .privacidadetexto{
+    width: 50%;
+    padding: 0 40px;
+}
+.privacidade .h1{
+    width: 56px;
+}
+.privacidade .privacidadeimg{
+    width: 50%;
+}
+.privacidade .container {
+    display: flex;
+    align-items: center;
+}
+.privacidade .privacidadetexto{
+    width: 50%;
+    padding: 0 40px;
+}
+.privacidade .privacidadeimg{
+    width: 50%;
+}
+.privacidade .privacidadeimg {
+    width: 100%;
+}
+.funciona h2{
+    text-align: center;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+} 
+li {
+    margin: 15px;
+}
+.Quemusa ul{
+    padding: 0;
+    margin: 0;
+}
+#imgtaxi,#imgcart,#imgdelivery,#imgchat {
+    width: 200px;
+}
+.btnicon{
+    cursor: pointer;
+    display: none;
+}
+footer{
+    background-color: #e6e6e6;
+    margin-top: 15px;
+}
+.paragrafo p{
+    padding: 15px;
+} 
+
+
+
+.socialMedia {
+    width: 50px;
+    padding: 3px;
+}
+
+/* Menu Cpaas */
+.imgServicos {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 20px 10px ;
+    border-radius: 50%;
+    background: #a80802;
+    box-shadow: 2px 2px 3px #333;
+}
+
+.servicos {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.imgServicos:hover {
+    transform: scale(1.1);
+    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s;
+}

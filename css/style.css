@@ -224,10 +224,6 @@ h3, h2 {
 }
 }
 
-#eventos {
-    text-align: center;
-}
-
 .contato {
     padding: 10px;
 }
@@ -292,17 +288,12 @@ footer {
     align-items: center;
 
 }
-/* #124f7d
 
-#840915
-
- */
 #logoCadastro {
     text-align: center;
 }
 
-
- #cadastroBody {
+#cadastroBody {
     background-color: #373636;
     color: white;
     display: flex;
@@ -324,6 +315,7 @@ footer {
     margin: 5px;
 }
 
+
  /* login */
 #bodyLogin {
     background-color: #373636;
@@ -335,7 +327,6 @@ footer {
     flex-direction: column;
 }
 
- 
 #formLogin {
     display: flex;
     flex-direction: column;
@@ -354,8 +345,6 @@ footer {
     max-width: 55%;
 }
 
-
-
 .form-btn {
     margin: 5px;
 }
@@ -363,6 +352,7 @@ footer {
 svg {
     margin: 5px;
 }
+
 
 @media (min-width: 690px) and (max-width: 767px) {
     .imgMulher {

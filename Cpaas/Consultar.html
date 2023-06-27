@@ -5,149 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Consultar - CPaaS Telecall </title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            outline: none;
-            font-family: 'Inter, sans-serif';
-        }
-        body{
-            background-color: #ffffff;
-        }
-        img {
-            width: 300px;
-        }
-        button {
-            background-color: rgb(47, 88, 165);
-            color: white;
-            padding: 15px 20px;
-            border-radius: 10px;
-            cursor: pointer;
-            display: inline-block;
-            transition: 0.1s;
-        }
-        .button:hover{
-            background-color: #3580db;
-        }
-        section,
-        footer {
-            padding: 54px 0;
-        }
-        h1{
-            font-size: 50px;
-        }
-        p{
-            color: #0000009c;
-        }
-        .container {
-            max-width: 1400px;
-            margin: auto 0;
-            padding: 0 5%;
-        }
-        nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 30px;
-        }
-        nav ul {
-            display: flex;
-            align-items: center;
-        }
-        nav ul a {
-            color: rgb(47, 88, 165);
-            margin: 0 25px;
-            text-transform: uppercase;
-            font-size: 14px;
-            display: block;
-        }
-        nav ul a::after{
-            content: "";
-            background-color: #3580db;
-            height: 3px;
-            width: 0px;
-            display: block;
-            transition: 0.3s;
-            margin: 0 auto;
-        }
-        nav ul a:hover::after{
-            width: 100%;
-        }
-        .banner {
-            display: flex;
-            justify-content: center;
-        }
-        .banner .banner-text {
-            margin: 150px;
-            text-align: center;
-            padding: 0 90px;
-        }
-        .banner .banner-text h1 {
-            font-size: 96px;
-        }
-        .banner .banner-text p{
-            font-size: 20px;
-            font-weight: lighter;
-            margin: 18px 0;
-        }
-        .privacidade .container {
-            display: flex;
-            align-items: center;
-
-        }
-        .privacidade .privacidadetexto{
-            width: 50%;
-            padding: 0 40px;
-        }
-        .privacidade .h1{
-            width: 56px;
-        }
-        .privacidade .privacidadeimg{
-            width: 50%;
-        }
-        .privacidade .container {
-            display: flex;
-            align-items: center;
-        }
-        .privacidade .privacidadetexto{
-            width: 50%;
-            padding: 0 40px;
-        }
-        .privacidade .privacidadeimg{
-            width: 50%;
-        }
-        .privacidade .privacidadeimg {
-            width: 100%;
-        }
-        ul {
-            display: flex;
-            justify-content: space-around;
-            list-style: none;
-        } 
-        .Quemusa ul{
-            padding: 0;
-            margin: 0;
-        }
-        #imgtaxi,#imgcart,#imgdelivery,#imgchat {
-            width: 200px;
-        }
-       .btnicon{
-        cursor: pointer;
-        display: none;
-       }
-       footer{
-        background-color: #e6e6e6;
-       }
-       h1{
-        padding-right: 3%;
-       }
-        .paragrafo p{
-            padding: 15px 15px;
-       }       
-    </style>
+    <link rel="stylesheet" href="/css/styleCpaas.css">
+    
 </head>
 <body>
     <!--header-->
@@ -155,8 +14,8 @@
         <!--container-->
         <div class="container"> 
             <nav class="img">
-                <a href="index.html"> 
-                <img src="img/logotelecall.png" alt="logotelecall">
+                <a href="/index.html"> 
+                <img src="/img/logotelecall.png" alt="logotelecall">
             </a>
             <ul class="ul">
                 <a href="index.html"> PRODUTOS </a>
@@ -193,7 +52,7 @@
             <div class="privacidade-texto"> </div>
             <h1> Faça sua consulta de forma organizada</h1>
             <div class="privacidade-img">
-                <img src="img/consulta.png" >
+                <img src="/img/consulta.png" >
             </div>
         </div>
     </section>
@@ -202,15 +61,15 @@
     <ul class="funciona">
         <li>
             <h2> Como funciona: </h2>
-          <img src="img/express-delivery.png" width="250px" >
+          <img src="/img/express-delivery.png" width="250px" >
             <p> Mantenha seu cliente informado sobre entregas e serviços, tire dúvidas, etc. </p>
         </li>
         <li> 
-            <img src="img/shopping-cart.png" width="250px" >
+            <img src="/img/shopping-cart.png" width="250px" >
             <p> Permite que clientes entrem em contato através do aplicativo, podendo também integrar chamadas internacionais. </p>
         </li>
         <li>
-            <img src="img/chat.png" width="250px" >
+            <img src="/img/chat.png" width="250px" >
             <p> Permite uma maneira privada e segura para usuários interagirem sem expor contatos pessoais. </p>
         </li>
     </ul>

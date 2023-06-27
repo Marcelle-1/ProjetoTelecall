@@ -5,149 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Número Máscara - CPaaS Telecall </title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            outline: none;
-            font-family: 'Inter, sans-serif';
-        }
-        body{
-            background-color: #ffffff;
-        }
-        img {
-            width: 300px;
-        }
-        button {
-            background-color: rgb(47, 88, 165);
-            color: white;
-            padding: 15px 20px;
-            border-radius: 10px;
-            cursor: pointer;
-            display: inline-block;
-            transition: 0.1s;
-        }
-        .button:hover{
-            background-color: #3580db;
-        }
-        section,
-        footer {
-            padding: 54px 0;
-        }
-        h1{
-            font-size: 50px;
-        }
-        p{
-            color: #0000009c;
-        }
-        .container {
-            max-width: 1400px;
-            margin: auto 0;
-            padding: 0 5%;
-        }
-        nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 30px;
-        }
-        nav ul {
-            display: flex;
-            align-items: center;
-        }
-        nav ul a {
-            color: rgb(47, 88, 165);
-            margin: 0 25px;
-            text-transform: uppercase;
-            font-size: 14px;
-            display: block;
-        }
-        nav ul a::after{
-            content: "";
-            background-color: #3580db;
-            height: 3px;
-            width: 0px;
-            display: block;
-            transition: 0.3s;
-            margin: 0 auto;
-        }
-        nav ul a:hover::after{
-            width: 100%;
-        }
-        .banner {
-            display: flex;
-            justify-content: center;
-        }
-        .banner .banner-text {
-            margin: 150px;
-            text-align: center;
-            padding: 0 90px;
-        }
-        .banner .banner-text h1 {
-            font-size: 96px;
-        }
-        .banner .banner-text p{
-            font-size: 20px;
-            font-weight: lighter;
-            margin: 18px 0;
-        }
-        .privacidade .container {
-            display: flex;
-            align-items: center;
-
-        }
-        .privacidade .privacidadetexto{
-            width: 50%;
-            padding: 0 40px;
-        }
-        .privacidade .h1{
-            width: 56px;
-        }
-        .privacidade .privacidadeimg{
-            width: 50%;
-        }
-        .privacidade .container {
-            display: flex;
-            align-items: center;
-        }
-        .privacidade .privacidadetexto{
-            width: 50%;
-            padding: 0 40px;
-        }
-        .privacidade .privacidadeimg{
-            width: 50%;
-        }
-        .privacidade .privacidadeimg {
-            width: 100%;
-        }
-        .funciona h2{
-            text-align: center;
-        }
-        ul {
-            display: flex;
-            justify-content: space-around;
-            list-style: none;
-        } 
-        .Quemusa ul{
-            padding: 0;
-            margin: 0;
-        }
-        #imgtaxi,#imgcart,#imgdelivery,#imgchat {
-            width: 200px;
-        }
-       .btnicon{
-        cursor: pointer;
-        display: none;
-       }
-       footer{
-        background-color: #e6e6e6;
-       }
-       .paragrafo p{
-            padding: 15px;
-       } 
-    </style>
+    <link rel="stylesheet" href="/css/styleCpaas.css">
 </head>
 <body>
     <!--header-->
@@ -155,8 +13,8 @@
         <!--container-->
         <div class="container"> 
             <nav class="img">
-                <a href="index.html"> 
-                <img src="img/logotelecall.png" alt="logotelecall">
+                <a href="/index.html"> 
+                <img src="/img/logotelecall.png" alt="logotelecall">
             </a>
             <ul class="ul">
                 <a href="index.html"> PRODUTOS </a>
@@ -191,10 +49,10 @@
     <!--privacidade-->
     <section class="privacidade"> 
         <div class="container">
-            <div class="privacidade-texto"> </div>
-            <h1> Garanta a privacidade de seus clientes</h1>
+            <div class="privacidade-texto">
+            <h1> Garanta a privacidade de seus clientes</h1> </div>
             <div class="privacidade-img">
-                <img src="img/gentealeatoria.png" >
+                <img class="img" src="/img/gentealeatoria.png" >
             </div>
         </div>
     </section>
@@ -203,17 +61,17 @@
     <ul class="funciona">
         <li>
             <h2>  Usuário faz uma chamada através de um aplicativo. </h2>
-          <img src="img/number_masking1.png" width="250px" >
+          <img src="/img/number_masking1.png" width="250px" >
             <p> Ex.: usuário liga para o entregador ou motorista de taxi ou entra em contato com a central de atendimento. </p>
         </li>
         <li> 
             <h2> Plataforma mascara o número original. </h2>
-            <img src="img/number_masking2.png" width="250px" >
+            <img src="/img/number_masking2.png" width="250px" >
             <p> A plataforma recebe a chamada e mascara o número antes de conectar o destinatário. </p>
         </li>
         <li>
             <h2> Ambas as partes são conectadas. </h2>
-            <img src="img/number_masking3.png" width="250px" >
+            <img src="/img/number_masking3.png" width="250px" >
             <p> A plataforma conecta ambas as partes mantendo a privacidade dos dois. </p>
         </li>
     </ul>

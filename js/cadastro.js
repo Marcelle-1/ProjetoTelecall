@@ -15,11 +15,10 @@ senha.onchange = senhasIguais;
 confirmaSenha.onkeyup = senhasIguais;
 
 
+
 function cadastraUsuario() {
     var usuario = document.getElementById("validationServerUsername");
     var senhaUsuario = confirmaSenha;
-    var cadastrado = document.getElementById("cadastrado")
-    // var formCadastro = document.getElementById("form-cadastro")
 
     var dados = JSON.parse(localStorage.getItem('dados') || '[]');
 
