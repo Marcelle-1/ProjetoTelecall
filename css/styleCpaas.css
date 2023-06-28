@@ -5,7 +5,7 @@
     text-decoration: none;
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
+    font-size: medium;
 }
 body{
     background-color: #ffffff;
@@ -15,7 +15,7 @@ body{
 }
 a {
     text-decoration: none;
-    text-decoration-color:currentColor;
+    color: black;
 }
 button {
     background-color: rgb(47, 88, 165);
@@ -163,6 +163,13 @@ footer{
 }
 
 /* Menu Cpaas */
+.imgLogoHeader{
+    margin-left: 10px;
+    max-width: 300px;
+}
+.servicosCpaas h1{
+    font-size: 40px;
+}
 .imgServicos {
     width: 250px;
     height: 250px;
@@ -196,7 +203,9 @@ footer{
 .areaUtiliza {
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-items: center;
     padding: 10px;
+    max-width: 33%;
+    margin: 5px;
+    text-align: center
 }
