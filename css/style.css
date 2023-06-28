@@ -159,7 +159,7 @@ h3, h2 {
 .cards {
     display: flex;
     padding: 10px;
-    align-content: space-around;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
 }
