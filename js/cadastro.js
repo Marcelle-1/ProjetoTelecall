@@ -31,6 +31,6 @@ function cadastraUsuario() {
 
     localStorage.setItem('dados', JSON.stringify(dados));
     
-    window.location.href = '/sucesso.html'
+    window.location.href = './sucesso.html'
 
 }

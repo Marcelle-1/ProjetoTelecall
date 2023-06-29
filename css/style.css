@@ -46,6 +46,7 @@ header{
     padding: 0 5%;
     height: 4em;
     box-shadow: 1px 1px 4px #1c1c1c;
+
 }
 
 .navigation_header{
@@ -104,6 +105,7 @@ header{
 }
 
 
+/* Dark/Light mode */
 .btnMode {
     background: none;
     color: black;
@@ -121,8 +123,25 @@ header{
 .light-mode {
     background-color: #FAF9F9;
     color: black;
-
+    &
+    .card {
+        background-color: navy;
+    }
+    &
+    #header {
+        background-color: #95D8FF;
+    }
+    &
+    h1, h2, h3 {
+        color: #b60000;
+    }
+    &
+    footer {
+        background-color: #1c1c1c;
+        color: white;
+    }
 }
+
 
 
 /* Index */
@@ -191,6 +210,22 @@ h3, h2 {
 .cardPlanos {
     max-width: fit-content;
 }
+/* 
+@media (prefers-color-scheme: dark) {
+    h1, h2, h3 {
+        color: #b60000;
+    }
+    .card {
+        background-color: navy;
+    }
+    #header {
+        background-color: #95D8FF;
+    }
+    footer {
+        background-color: #1c1c1c;
+        color: white;
+    }
+} */
 
 @media screen and (min-width: 950px) {
     .imgMulher {
