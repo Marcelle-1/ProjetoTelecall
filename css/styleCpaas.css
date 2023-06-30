@@ -8,7 +8,7 @@
     font-size: medium;
 }
 body{
-    background-color: #ffffff;
+    background-color: whitesmoke;
 }
 .img {
     width: 300px;
@@ -31,7 +31,7 @@ button {
 }
 section,
 footer {
-    padding: 54px 0;
+    padding: 15px 0;
 }
 h1{
     font-size: 50px;
@@ -48,7 +48,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 nav ul {
     display: flex;
@@ -72,6 +72,9 @@ nav ul a::after{
 }
 nav ul a:hover::after{
     width: 100%;
+}
+.logo {
+    max-width: 250px;
 }
 .banner {
     display: flex;
@@ -169,6 +172,11 @@ footer{
 }
 .servicosCpaas h1{
     font-size: 40px;
+    color: #3580db;
+}
+.utilizacoes h1{
+    font-size: 40px;
+    color: #3580db;
 }
 .imgServicos {
     width: 250px;
@@ -189,6 +197,9 @@ footer{
 .imgServicos:hover {
     transform: scale(1.1);
     transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s;
+}
+.utilizacoes h2{
+    font-size: 30px;
 }
 .utilizacoes h2{
     font-size: 30px;

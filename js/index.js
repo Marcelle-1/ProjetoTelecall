@@ -52,6 +52,7 @@ var btnDiminuir      = document.getElementById('btnDiminuir');
 var elementBody      = document.querySelector( 'body');
 var fontSize         = 100;
 var aumentaDiminui   = 10;
+
 function aumentar() {
     fontSize = fontSize + aumentaDiminui;
     elementBody.style.fontSize = fontSize + '%';   

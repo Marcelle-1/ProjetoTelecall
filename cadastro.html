@@ -18,7 +18,7 @@
 
     <section id="cadastro" class="container">
         <h2>Faça seu cadastro</h2>
-        <form id="form-cadastro" class="row g-3 was-validated">
+        <form id="form-cadastro" class="row g-3 was-validated" action="./sucesso.html">
             <div class="col-md-4 ">
               <label for="validationServer01" class="form-label">Nome</label>
               <input type="text" class="form-control"  id="name" value="" required pattern="^[A-Za-z]{3,60}$">
@@ -137,7 +137,7 @@
             </div>
             <div class="col-md-3">
                 <label for="validationServer09" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="validationServer09" aria-describedby="validationServer09Feedback" required pattern="^[0-9]{8}$">
+                <input type="text" class="form-control" id="validationServer09" aria-describedby="validationServer09Feedback" required pattern="^[0-9]{8}$ || ^[0-9]{5}-?[0-9]{3}$">
                 <div id="validationServer09Feedback" class="invalid-feedback is-invalid">
                     Por favor insira um CEP Válido.
                 </div>
